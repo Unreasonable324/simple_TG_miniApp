@@ -1,0 +1,13 @@
+<script setup lang="ts">
+import { useRoute } from 'vue-router';
+import { webApp } from '@/core/telegram';
+
+const route = useRoute();
+</script>
+<template>
+  <div class="font-bold p-5">
+    id реферал:<span class="text-[red]">{{ route.params.id }}</span>
+    <pre>{{ webApp }}</pre>
+  </div>
+</template>
+<style></style>
