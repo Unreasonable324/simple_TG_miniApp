@@ -7,7 +7,7 @@ const route = useRoute();
 <template>
   <div class="font-bold p-5 bg-white">
     id реферал:<span class="text-[red]">{{ route.query.id }}</span>
-    <pre>{{ webApp }}</pre>
+    <pre>{{ webApp.initDataUnsafe.user }}</pre>
   </div>
 </template>
 <style></style>
