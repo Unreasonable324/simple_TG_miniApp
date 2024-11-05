@@ -1,4 +1,6 @@
-let webApp;
+import { iWebApp } from './types';
+
+let webApp: iWebApp;
 // @ts-ignore
 console.log("tgInfo", Telegram.WebApp);
 // @ts-ignore
