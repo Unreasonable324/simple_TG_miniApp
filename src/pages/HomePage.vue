@@ -2,7 +2,6 @@
 import { useRoute } from 'vue-router';
 import { webApp } from '@/core/telegram';
 
-webApp.expand()
 const route = useRoute();
 </script>
 <template>
