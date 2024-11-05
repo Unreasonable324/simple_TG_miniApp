@@ -6,7 +6,7 @@ const route = useRoute();
 </script>
 <template>
   <div class="font-bold p-5">
-    id реферал:<span class="text-[red]">{{ route.params.id }}</span>
+    id реферал:<span class="text-[red]">{{ route.query.id }}</span>
     <pre>{{ webApp }}</pre>
   </div>
 </template>
