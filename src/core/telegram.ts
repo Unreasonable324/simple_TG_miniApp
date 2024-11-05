@@ -2,5 +2,5 @@ import { iWebApp } from './types';
 
 let webApp: iWebApp;
 // @ts-ignore
-webApp = window.Telegram.WebApp;
+webApp = Telegram.WebApp;
 export { webApp };
