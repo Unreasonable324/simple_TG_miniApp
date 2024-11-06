@@ -12,7 +12,7 @@ const go = (path: string) => {
 </script>
 
 <template>
-  <div class="p-10">
+  <div class="p-10 bg-white text-black">
     <div class="flex gap-3">
       <button class="bg-blue-200 p-3 rounded-lg" @click="go('/')">home</button>
       <button class="bg-blue-200 p-3 rounded-lg" @click="go('/about')">about</button>

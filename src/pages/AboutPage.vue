@@ -5,10 +5,10 @@ const { showAlert } = useWebAppPopup();
 const { initDataUnsafe } = useWebApp();
 </script>
 <template>
-  <div class="bg-white">
+  <div class="">
     <div class="">
       you:
-      <pre>{{ initDataUnsafe }}</pre>
+      <!-- <pre>{{ initDataUnsafe }}</pre> -->
     </div>
     <MainButton text="главная кнопка" @click="showAlert('главная кнопка')"></MainButton>
   </div>
