@@ -1,15 +1,16 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import type { LoginWidgetUser } from 'vue-tg';
 import { LoginWidget } from 'vue-tg';
 
-const user = ref({});
+const data = ref({});
 
 function handleUserAuth(user: LoginWidgetUser) {
-  user.value = user;
+  data.value = user;
 }
 </script>
 <template>
   <LoginWidget bot-username="green_way_test_bot" @auth="handleUserAuth" />
-  {{user}}
+  {{ data }}
 </template>
 <style></style>
