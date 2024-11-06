@@ -12,11 +12,7 @@ const routes: RouteRecordRaw[] = [
     name: "about",
     component: () => import("@/pages/AboutPage.vue"),
   },
-  {
-    path: "/login",
-    name: "login",
-    component: () => import("@/pages/LoginPage.vue"),
-  },
+
 ];
 
 const router = createRouter({
