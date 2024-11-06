@@ -11,7 +11,7 @@ function handleUserAuth(user:any) {
 </script>
 <template>
   <div class="bg-white">
-      <LoginWidget bot-username="Shumakov_epta" @auth="handleUserAuth" />
+      <LoginWidget bot-username="green_way_test_bot" @auth="handleUserAuth" />
       <pre>{{ data }}</pre>
   </div>
 </template>
