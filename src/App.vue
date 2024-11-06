@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
-import { webApp } from '@/core/telegram';
+
+// import { webApp } from '@/core/telegram';
 
 const router = useRouter();
-webApp.expand();
+// webApp.expand();
 
 const go = (path: string) => {
   router.push(path);
