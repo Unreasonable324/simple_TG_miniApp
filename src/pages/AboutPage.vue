@@ -8,7 +8,7 @@ const { initDataUnsafe } = useWebApp();
   <div class="">
     <div class="">
       you:
-      <!-- <pre>{{ initDataUnsafe }}</pre> -->
+      <pre>{{ initDataUnsafe }}</pre>
     </div>
     <MainButton text="главная кнопка" @click="showAlert('главная кнопка')"></MainButton>
   </div>
