@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const { MainButton, useWebAppPopup, useWebApp } = await import("vue-tg");
+import { MainButton, useWebApp, useWebAppPopup } from 'vue-tg';
+
 const { showAlert } = useWebAppPopup();
 const { initDataUnsafe } = useWebApp();
 </script>
