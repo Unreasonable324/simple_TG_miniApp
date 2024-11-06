@@ -10,7 +10,9 @@ function handleUserAuth(user: LoginWidgetUser) {
 }
 </script>
 <template>
-  <LoginWidget bot-username="green_way_test_bot" @auth="handleUserAuth" />
-  {{ data }}
+  <div class="bg-white">
+      <LoginWidget bot-username="green_way_test_bot" @auth="handleUserAuth" />
+      <pre>{{ data }}</pre>
+  </div>
 </template>
 <style></style>
