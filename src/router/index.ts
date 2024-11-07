@@ -17,6 +17,16 @@ const routes: RouteRecordRaw[] = [
     name: "alert",
     component: () => import("@/pages/AlertsPage.vue"),
   },
+  {
+    path: "/alert",
+    name: "alert",
+    component: () => import("@/pages/AlertsPage.vue"),
+  },
+  {
+    path: "/send_data",
+    name: "send_data",
+    component: () => import("@/pages/SendDataPage.vue"),
+  },
 
 ];
 
