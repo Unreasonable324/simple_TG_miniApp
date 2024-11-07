@@ -7,7 +7,7 @@ const { initDataUnsafe } = useWebApp();
 const message = ref<unknown>("");
 const send = async () => {
   if (!initDataUnsafe?.user?.id) return;
-  fetch(`https://api.telegram.org/bot${import.meta.env.VITE_BASE_BOT_TOKEN}/test/sendMessage`, {
+  fetch(`https://api.telegram.org/bot${import.meta.env.VITE_BASE_BOT_TOKEN}/sendMessage`, {
     method: "POST",
     body: {
       parse_mode: "html",
