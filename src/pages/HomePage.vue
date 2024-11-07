@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
 
-// import { webApp } from '@/core/telegram';
-
 const route = useRoute();
 </script>
 <template>
@@ -10,7 +8,7 @@ const route = useRoute();
     id реферал:<span class="text-[red]">{{ route.query.id }}</span>
     <br />
     номер телефона:<span class="text-[red]">{{ route.query.phone_number }}</span>
-    <!-- <pre>{{ webApp }}</pre> -->
+ 
   </div>
 </template>
 <style></style>

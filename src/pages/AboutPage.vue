@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MainButton, useWebApp, useWebAppPopup } from 'vue-tg';
+import { BackButton, MainButton, useWebApp, useWebAppPopup } from 'vue-tg';
 
 const { showAlert } = useWebAppPopup();
 const { initDataUnsafe } = useWebApp();
@@ -11,6 +11,7 @@ const { initDataUnsafe } = useWebApp();
       <pre>{{ initDataUnsafe }}</pre>
     </div>
     <MainButton text="главная кнопка" @click="showAlert('главная кнопка')"></MainButton>
+     <BackButton @click="$router.push('/')" />
   </div>
 </template>
 <style></style>
