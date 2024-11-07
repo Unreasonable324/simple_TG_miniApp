@@ -9,11 +9,11 @@ const send = async () => {
   if (!initDataUnsafe?.user?.id) return;
   fetch(`https://api.telegram.org/bot${import.meta.env.VITE_BASE_BOT_TOKEN}/test/sendMessage`, {
     method: "POST",
-    body: JSON.stringify({
+    body: {
       parse_mode: "html",
       chat_id: initDataUnsafe.user.id,
       text: message.value,
-    }),
+    } as any,
   });
   //   } catch (e) {
   // console.log(e);
