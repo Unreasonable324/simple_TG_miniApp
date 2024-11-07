@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
-
-// import { webApp } from '@/core/telegram';
+import { ClosingConfirmation, ExpandedViewport } from 'vue-tg';
 
 const router = useRouter();
 // webApp.expand();
@@ -21,6 +20,8 @@ const go = (path: string) => {
     </div>
     <router-view></router-view>
   </div>
+    <ClosingConfirmation />
+     <ExpandedViewport />
 </template>
 
 <style scoped></style>
