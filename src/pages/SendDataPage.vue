@@ -4,16 +4,16 @@ import { useWebApp } from 'vue-tg';
 
 const { initDataUnsafe } = useWebApp();
 
-const message = ref("");
-const send = () => {
+const message = ref<unknown>("");
+const send = async () => {
   if (!initDataUnsafe?.user?.id) return;
   fetch(`https://api.telegram.org/bot${import.meta.env.VITE_BASE_BOT_TOKEN}/test/sendMessage`, {
     method: "POST",
-    body: {
+    body: JSON.stringify({
       parse_mode: "html",
       chat_id: initDataUnsafe.user.id,
       text: message.value,
-    },
+    }),
   });
   //   } catch (e) {
   // console.log(e);
