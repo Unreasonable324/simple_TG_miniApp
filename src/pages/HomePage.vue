@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
+import { BackButton, MainButton, Popup, useWebAppPopup } from 'vue-tg';
 
+const { showAlert } = useWebAppPopup();
 const route = useRoute();
 </script>
 <template>
@@ -10,5 +12,7 @@ const route = useRoute();
     номер телефона:<span class="text-[red]">{{ route.query.phone_number }}</span>
  
   </div>
+    <MainButton text="главная кнопка" @click="showAlert('тык на главную')"></MainButton>
+
 </template>
 <style></style>

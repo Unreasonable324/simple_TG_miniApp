@@ -7,6 +7,7 @@ const isOpen = ref(false);
 const { showAlert } = useWebAppPopup();
 function handlePopupClose(buttonId: string) {
   text.value = buttonId;
+  isOpen.value = false;
 }
 const buttons = [
   {
