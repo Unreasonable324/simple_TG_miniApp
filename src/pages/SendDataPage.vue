@@ -10,9 +10,8 @@ const send = async () => {
   if (!initDataUnsafe?.user?.id) return;
   sendData(
     JSON.stringify({
-      parse_mode: "html",
-      chat_id: initDataUnsafe.user.id,
-      text: message.value,
+      data: "123213213",
+      button_text: 'message.value',
     })
   );
 
