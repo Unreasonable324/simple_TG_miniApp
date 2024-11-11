@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import { useWebApp } from 'vue-tg';
 
-const { initDataUnsafe, sendData } = useWebApp();
+const { initDataUnsafe } = useWebApp();
 
 const message = ref<unknown>("");
 const token = "7871921914:AAE1tqgOHPexqTzqOXrLHkunIckD7fpo0S0";

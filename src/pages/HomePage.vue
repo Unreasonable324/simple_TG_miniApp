@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { BackButton, MainButton, Popup, useWebAppPopup } from 'vue-tg';
+import { MainButton, useWebAppPopup } from 'vue-tg';
 
 const { showAlert } = useWebAppPopup();
 const route = useRoute();
